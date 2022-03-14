@@ -1,0 +1,37 @@
+.snap {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    height: 120px;
+    width: 120px;
+    background-image: url("thanos_snap.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    animation: snaps 2s steps(47);
+}
+
+.hide {
+    display: none;
+}
+
+.glow-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+@keyframes snaps {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}

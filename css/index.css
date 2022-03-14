@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: 'Nexa';
+    src: url("../assets/fonts/nexa-font/NexaLight.otf");
+    src: url("../assets/fonts/nexa-font/NexaBold.otf");
+}
+
+@font-face {
+    font-family: 'AvenirLTStd';
+    src: url("../assets/fonts/avenir/AvenirLTStd-Black.otf");
+    src: url("../assets/fonts/avenir/AvenirLTStd-Book.otf");
+    src: url("../assets/fonts/avenir/AvenirLTStd-Roman.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+main {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.desktop-message{
+    text-align: center;
+    color: #000000;
+}
+
+@media all and (max-width: 768px) {
+    *{
+        display: block;
+    }
+
+    main {
+        overflow-x: hidden;
+        position: relative;
+        height: max-content;
+    }
+
+    canvas{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+
+    #header{
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        z-index: 1000;
+        top: -50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    #header> h3{
+        color: #ffffff;
+        font-weight: normal;
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .small-pic-wrapper{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto 0;
+
+        width: 33px;
+        height: 33px;
+        background: #63EFFF;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .small-pic{
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 100%;
+    }
+
+    #profile{
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+        height: 187px;
+        /*height: max-content;*/
+        transition: height 1s;
+    }
+
+    #profile> .pic-wrapper{
+        display: inline-block;
+        width: 183px;
+        height: 183px;
+        border-radius: 100%;
+        position: relative;
+        z-index: 1001;
+
+        background: linear-gradient(#aaffa9 0%, #11ffbd 100%);
+    }
+
+    #profile canvas{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 100%;
+    }
+
+    .pic-wrapper .pic{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        border-radius: 100%;
+        width: 170px;
+        height: 170px;
+
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
+        overflow: hidden;
+    }
+
+    #name{
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #name h1{
+        font-family: 'Avenir LT';
+        font-size: 34px;
+    }
+    #name h5{
+        color: #2B2B2B;
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+    #card-outer-wrapper{
+        /*height: 600px;*/
+    }
+
+    #footer{
+        width: 100%;
+        height: 30px;
+        background: #3C3744;
+        text-align: center;
+        display: flex;
+
+        align-content: center;
+        align-items: center;
+    }
+
+    #footer> h5{
+        width: 100%;
+        height: max-content;
+        color: #A1A1A1;
+        font-family: 'Baloo Thambi 2', cursive;
+    }
+}
+
+
+/*
+
+To join the video meeting, click this link: https://meet.google.com/miw-wshi-ypp
+Otherwise, to join by phone, dial +1 573-738-8240 and enter this PIN: 848 086 083#
+To view more phone numbers, click this link: https://tel.meet/miw-wshi-ypp?hs=5
+
+*/
+
+.darkmode-layer .darkmode-layer--button darkmode-layer--expanded .darkmode-layer--no-transition .darkmode-layer--simple, .darkmode-toggle .darkmode-toggle--white{
+    z-index: 1000000000000000000;
+}
+
+/*#profile canvas{*/
+/*    border-radius: 50%;*/
+/*}*/

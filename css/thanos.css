@@ -1,0 +1,22 @@
+
+#thanos{
+    position: relative;
+    width: 100%;
+}
+
+#thanos > div{
+    height: 200px;
+    position: relative;
+}
+
+#thanos img{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: scale .4s;
+}
+

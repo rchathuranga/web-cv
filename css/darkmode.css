@@ -1,0 +1,32 @@
+
+@media (prefers-color-scheme: dark) {
+
+    .desktop-message {
+        color: white;
+    }
+
+    body{
+        background: #100f2c;
+    }
+
+    #name h1 {
+        color: #fff;
+    }
+
+    #name h5{
+        color: #685fff;
+    }
+
+    .card-header > h4{
+        color: #fff;
+    }
+
+    #profile> .pic-wrapper{
+        /*background: #9795f0;*/
+        background: linear-gradient(#9795f0 0%, #685fff 100%);
+    }
+
+    .card-bar{
+        background: #9795f0;
+    }
+}
